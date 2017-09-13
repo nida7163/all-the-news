@@ -10,6 +10,10 @@
   "engines": {
     "node": "8.4.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nida7163/all-the-news.git"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -27,8 +31,5 @@
     "mongoose": "^4.11.11",
     "morgan": "^1.8.2",
     "request": "^2.81.0"
-  },
-  "devDependencies": {
-    "dotenv": "^4.0.0"
   }
 }

@@ -8,6 +8,14 @@ var mongoose = require('mongoose');
 
 var app = express();
 
+
+// Using `mongoose.connect`...
+var promise = mongoose.connect('mongodb://heroku_5hq49lj8:9depouatqb4g9kvivslmtqa5qn@ds133084.mlab.com:33084/heroku_5hq49lj8', {
+  useMongoClient: true,
+  /* other options */
+});
+
+
 // Public Settings
 app.use(express.static(__dirname + '/public'));
 var port = process.env.PORT || 3000;
