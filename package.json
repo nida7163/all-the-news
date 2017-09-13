@@ -1,7 +1,7 @@
 {
   "name": "all-the-news",
   "version": "1.0.0",
-  "description": "",
+  "description": "mongodb://heroku_5hq49lj8:9depouatqb4g9kvivslmtqa5qn@ds133084.mlab.com:33084/heroku_5hq49lj8",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
