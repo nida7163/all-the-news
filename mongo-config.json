@@ -1,0 +1,10 @@
+{
+    "development": {
+        "MONGODB_URI": "mongodb://localhost/newsdb"
+    },
+    "test": {
+        "MONGODB_URI": "NOT_USED_IN_THIS_APPLICATION"
+    },
+    "production": {
+        "MONGODB_URI": "mongodb://heroku_5hq49lj8:9depouatqb4g9kvivslmtqa5qn@ds133084.mlab.com:33084/heroku_5hq49lj8"
+    }

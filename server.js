@@ -5,9 +5,6 @@ var bodyParser = require('body-parser');
 var logger = require('morgan');
 var app = express();
 var mongoose = require('mongoose');
-	db_url = process.env.MONGOHQ_URL || "mongodb://heroku_5hq49lj8:9depouatqb4g9kvivslmtqa5qn@ds133084.mlab.com:33084/heroku_5hq49lj8",
-	db = mongoose.connect(db_url),
-	schema = mongoose.Schema;
 
 var app = express();
 
@@ -34,7 +31,6 @@ app.engine('handlebars', expressHandlebars({
 }));
 app.set('view engine', 'handlebars');
 
-
 //Routes
 var routes = require('./controllers/news.js');
 app.use('/',routes);
@@ -46,8 +42,5 @@ app.use(function(req, res) {
 
 //Port
 app.listen(port, function() {
-    console.log("The magic happens on port:" + port);
+    console.log("Listening on port:" + port);
 });
-
-
-
