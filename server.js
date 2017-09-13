@@ -31,6 +31,7 @@ app.engine('handlebars', expressHandlebars({
 }));
 app.set('view engine', 'handlebars');
 
+
 //Routes
 var routes = require('./controllers/news.js');
 app.use('/',routes);
