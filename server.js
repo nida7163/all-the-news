@@ -5,6 +5,9 @@ var bodyParser = require('body-parser');
 var logger = require('morgan');
 var app = express();
 var mongoose = require('mongoose');
+db_url = process.env.MONGOHQ_URL || "mongodb://heroku_5hq49lj8:9depouatqb4g9kvivslmtqa5qn@ds133084.mlab.com:33084/heroku_5hq49lj8",
+    db = mongoose.connect(db_url),
+    Schema = mongoose.Schema;
 
 var app = express();
 
@@ -45,3 +48,4 @@ app.use(function(req, res) {
 app.listen(port, function() {
     console.log("The magic happens on port:" + port);
 });
+
