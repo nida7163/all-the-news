@@ -14,23 +14,23 @@ $(document).ready(function(){
 	$.getJSON('/scrape', function(){
 	});
 
-	// Get all articles when read articles button clicked and build an array of articles
-	$(document).on('click','#getArticles', function(){
-		$.getJSON('/articles', function(data){
+	// Get all article when read article button clicked and build an array of article
+	$(document).on('click','#getarticle', function(){
+		$.getJSON('/article', function(data){
 			articleList = data;
 			article = articleList[0];
 			showArticle(article);
 		}); 		
 	});
 
-	// Display previous article from the array of articles
+	// Display previous article from the array of article
 	$(document).on('click','.previous', function(){
 		article = articleList[previousArticle];
 		currentArticle = previousArticle;
 		showArticle(article);
 	}); 
 
-	// Display next article from the array of articles
+	// Display next article from the array of article
 	$(document).on('click','.next', function(){
 		article = articleList[nextArticle];
 		currentArticle = nextArticle;
@@ -71,7 +71,7 @@ $(document).ready(function(){
 		$('#summary').text(article.summary);
 		$("#readArticle").removeClass("hidden");
 		$('#article').attr('href', article.storyLink);
-		$("#getArticles").addClass("hidden");
+		$("#getarticle").addClass("hidden");
 		$("#navigation").empty();
 		previousArticle = currentArticle - 1;
 		if(previousArticle >= 0) {

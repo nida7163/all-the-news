@@ -12,7 +12,7 @@ var Promise = require("bluebird");
 mongoose.Promise = Promise;
 
 // Mongodb models
-var Articles = require("../models/articles");
+var article = require("../models/article");
 var Comments = require("../models/comments");
 
 // Website To Be Scraped
@@ -67,12 +67,12 @@ router.get('/scrape', function(req, res){
 				summary: summary
 			});	
 			// Check database to see if story saved previously to database
-			Articles.findOne({'title': title}, function(err, articleRecord) {
+			article.findOne({'title': title}, function(err, articleRecord) {
 				if(err) {
 					console.log(err);
 				} else {
 					if(articleRecord == null) {
-						Articles.create(result[i], function(err, record) {
+						article.create(result[i], function(err, record) {
 							if(err) throw err;
 							console.log("Record Added");
 						});
@@ -85,9 +85,9 @@ router.get('/scrape', function(req, res){
     });	
 });
 
-// Get all current articles in database
-router.get('/articles', function(req, res){
-	Articles.find().sort({ createdAt: -1 }).exec(function(err, data) { 
+// Get all current article in database
+router.get('/article', function(req, res){
+	article.find().sort({ createdAt: -1 }).exec(function(err, data) { 
 		if(err) throw err;
 		res.json(data);
 	});
