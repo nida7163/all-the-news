@@ -11,9 +11,9 @@ var Promise = require("bluebird");
 // Assign Mongoose promise
 mongoose.Promise = Promise;
 
-// // Mongodb models
-// var article = require("../models/article.js");
-// var comments = require("../models/comments.js");
+// Mongodb models
+var article = require('../models/article.js');
+var comments = require('../models/comments.js');
 
 // Website To Be Scraped
 var url = "http://www.goodnewsnetwork.org/latest-news/";
