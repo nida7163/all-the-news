@@ -12,8 +12,8 @@ var Promise = require("bluebird");
 mongoose.Promise = Promise;
 
 // Mongodb models
-var article = require("../models/article");
-var Comments = require("../models/comments");
+var article = require("../models/article.js");
+var comments = require("../models/comments.js");
 
 // Website To Be Scraped
 var url = "http://www.goodnewsnetwork.org/latest-news/";
@@ -95,7 +95,7 @@ router.get('/article', function(req, res){
 
 // Get all comments for one article
 router.get('/comments/:id', function(req, res){
-	Comments.find({'articleId': req.params.id}).exec(function(err, data) {
+	comments.find({'articleId': req.params.id}).exec(function(err, data) {
 		if(err) {
 			console.log(err);
 		} else {
@@ -107,7 +107,7 @@ router.get('/comments/:id', function(req, res){
 // Add comment for article
 router.post('/addcomment/:id', function(req, res){
 	console.log(req.params.id+' '+req.body.comment);
-	Comments.create({
+	comments.create({
 		articleId: req.params.id,
 		name: req.body.name,
 		comment: req.body.comment
@@ -123,7 +123,7 @@ router.post('/addcomment/:id', function(req, res){
 // Delete comment for article
 router.get('/deletecomment/:id', function(req, res){
 	console.log(req.params.id)
-	Comments.remove({'_id': req.params.id}).exec(function(err, data){
+	comments.remove({'_id': req.params.id}).exec(function(err, data){
 		if(err){
 			console.log(err);
 		} else {
