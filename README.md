@@ -12,6 +12,6 @@ In this assignment, I created a web app that lets users leave comments on the la
 - You'll need to use Mongoose's model system to associate comments with particular articles. 
 
 
-Created by Nida :100:
+**Created by Nida :100:**
 
-Georgia Tech Coding Bootcamp - April 2017 Cohort
+*Georgia Tech Coding Bootcamp - April 2017 Cohort*
