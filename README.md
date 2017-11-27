@@ -12,6 +12,7 @@ Create an app that follows this user story:
 - You'll need to use Mongoose's model system to associate comments with particular articles. 
 
 
-**Created by Nida :100:**
 
-*Georgia Tech Coding Bootcamp - April 2017 Cohort*
+**_Created by Nida :100:
+
+*Georgia Tech Coding Bootcamp - April 2017 Cohort
