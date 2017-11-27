@@ -13,6 +13,6 @@ Create an app that follows this user story:
 
 
 
-**_Created by Nida :100:_**
+**_Built by Nida :100:_**
 
 *Georgia Tech Coding Bootcamp - April 2017 Cohort*
