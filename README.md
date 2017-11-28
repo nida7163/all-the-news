@@ -12,9 +12,10 @@ Create an app that follows this user story:
 - All users can leave comments on the stories you collect. They should also be allowed to delete whatever comments they want removed. All stored comments should be visible to every user.
 - You'll need to use Mongoose's model system to associate comments with particular articles. 
 
-[Check it out here.](https://the-good-news.herokuapp.com/)
+### Link
+https://the-good-news.herokuapp.com/
 
-**_Built by Nida :100:_**
 
+### **_Built by Nida :100:_**
 *Georgia Tech Coding Bootcamp - April 2017 Cohort*
 
