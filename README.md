@@ -3,7 +3,7 @@
 In this assignment, I created a web app that lets users leave comments on the latest news. I used Mongoose and Cheerio to scrape positive vibes from the Good News Network. Read up and feel the warmth in your heart. 
 
 
-### Assignment Instructions 
+## Assignment Instructions 
 
 Create an app that follows this user story:
 
@@ -12,7 +12,7 @@ Create an app that follows this user story:
 - All users can leave comments on the stories you collect. They should also be allowed to delete whatever comments they want removed. All stored comments should be visible to every user.
 - You'll need to use Mongoose's model system to associate comments with particular articles. 
 
-### Link
+## Link
 https://the-good-news.herokuapp.com/
 
 
