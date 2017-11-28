@@ -8,5 +8,5 @@ When a user visits the site, the app will scrape stories from Good News Network.
 https://the-good-news.herokuapp.com/
 
 
-__*Built by Nida :100:*
+__*Built by Nida :100:*_
 
