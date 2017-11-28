@@ -8,5 +8,5 @@ When a user visits the site, the app will scrape stories from Good News Network.
 https://the-good-news.herokuapp.com/
 
 
-__*Built by Nida :100:* // *Georgia Tech Coding Bootcamp - April 2017 Cohort*__
+__*Built by Nida :100:*
 
