@@ -17,5 +17,5 @@ https://the-good-news.herokuapp.com/
 
 
 
-**_Built by Nida :100:_** // *Georgia Tech Coding Bootcamp - April 2017 Cohort*
+*Built by Nida :100:* // *Georgia Tech Coding Bootcamp - April 2017 Cohort*
 
