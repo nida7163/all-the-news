@@ -16,6 +16,6 @@ Create an app that follows this user story:
 https://the-good-news.herokuapp.com/
 
 
-### **_Built by Nida :100:_**
+**_Built by Nida :100:_**
 *Georgia Tech Coding Bootcamp - April 2017 Cohort*
 
