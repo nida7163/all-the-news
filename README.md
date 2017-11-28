@@ -1,4 +1,5 @@
-# Good news, 
+#  All The GOOD News 
+
 In this assignment, I created a web app that lets users leave comments on the latest news. I used Mongoose and Cheerio to scrape positive vibes from the Good News Network. Check it out and feel the warmth in your heart. 
 
 ## Assignment Instructions 
